@@ -1,0 +1,2 @@
+[22-Jun-2015 22:32:13 America/Denver] PHP Warning:  include(): Failed opening '../../../header.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home1/crisisbl/public_html/cascade/products/alder/superior.php on line 1
+[22-Jun-2015 22:32:13 America/Denver] PHP Warning:  include(): Failed opening '../../../footer.php' for inclusion (include_path='.:/usr/php/54/usr/lib64:/usr/php/54/usr/share/pear') in /home1/crisisbl/public_html/cascade/products/alder/superior.php on line 204
