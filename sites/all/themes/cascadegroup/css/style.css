@@ -2,7 +2,7 @@
 @font-face {
     font-family: 'Captureit';
     src: url('../fonts/capture_it-webfont.eot');
-    src: url('../fonts/capture_it-webfont.eot?') format('embedded-opentype'),
+    src: url('../fonts/capture_it-webfont.eot%3F') format('embedded-opentype'),
          url('../fonts/capture_it-webfont.woff') format('woff'),
          url('../fonts/capture_it-webfont.ttf') format('truetype'),
          url('../fonts/capture_it-webfont.svg') format('svg');
@@ -13,7 +13,7 @@
 @font-face {
     font-family: 'Rokkitt';
     src: url('../fonts/rokkittbold-webfont.eot');
-    src: url('../fonts/rokkittbold-webfont.eot?') format('embedded-opentype'),
+    src: url('../fonts/rokkittbold-webfont.eot%3F') format('embedded-opentype'),
          url('../fonts/rokkittbold-webfont.woff') format('woff'),
          url('../fonts/rokkittbold-webfont.ttf') format('truetype'),
          url('../fonts/rokkittbold-webfont.svg') format('svg');
@@ -25,7 +25,7 @@
 @font-face {
     font-family: 'Rokkitt';
     src: url('../fonts/rokkitt-webfont.eot');
-    src: url('../fonts/rokkitt-webfont.eot?') format('embedded-opentype'),
+    src: url('../fonts/rokkitt-webfont.eot%3F') format('embedded-opentype'),
          url('../fonts/rokkitt-webfont.woff') format('woff'),
          url('../fonts/rokkitt-webfont.ttf') format('truetype'),
          url('../fonts/rokkitt-webfont.svg') format('svg');

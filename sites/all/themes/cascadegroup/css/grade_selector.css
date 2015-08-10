@@ -969,27 +969,28 @@ a.glossaryTerm:hover { border-bottom: none; text-decoration: none; }
 #glossaryTip {
 	display: none;
 	position: absolute;
-	top: 200px;
-	left: 200px;
+	top: 0px;
+	left: 0px;
 	z-index: 99999;
 	cursor: default;
 }
 
 #glossaryContent {
 	text-align: justify;
-	font-size: 11px;
+	font-size: 12px;
 	line-height: 125%;
-	padding: 1em;
+	padding: 1.4em;
 	background-color: #fff;
 	border: 0px solid #ccc;
 	border-radius: 8px;
-	width: 300px;
-	height: 211px;
+	width: 200px;
+	height: auto;
 }
 
 #glossaryContent img {
-	float: left;
-	padding-right: 10px;
+	vertical-align: middle;
+	padding-bottom: 10px;
+	padding-left: 17px;
 }
 #glossaryContent h6 {
 	margin: 0 0 0.6em;
@@ -1004,10 +1005,16 @@ a.glossaryTerm:hover { border-bottom: none; text-decoration: none; }
 	top: -5px;
 	width: 20px;
 	height: 20px;
-	background: url('ui_close_sm.gif') no-repeat;
 	cursor: pointer;
+	padding: 12px;
 }
-#glossaryTip > #glossaryClose { background: url('ui_close_sm.png') no-repeat; }
+#glossaryClose:after {
+	content: "X";
+    color: #ccc;
+    font-size: 18px;
+    font-weight: 100;
+}
+#glossaryTip > #glossaryClose { /* background: url('ui_close_sm.png') no-repeat; */ }
 
 
 
