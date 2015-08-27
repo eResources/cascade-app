@@ -1229,6 +1229,19 @@ jQuery.extend(Drupal.settings, {
         }
     }, {
         "node": {
+            "title": "#1 Shop",
+            "Species": "Cotton",
+            "Category": "clear",
+            "Nid": "43",
+            "Path": "cottonwood\/1-shop.html",
+            "Cutting Face": "cf2",
+            "Limiting Characteristics": "color",
+            "Width": {},
+            "Matrix": {},
+            "Rons_Category": "clear"
+        }
+    }, {
+        "node": {
             "title": "Select & Better",
             "Species": "Cotton",
             "Category": "clear",
