@@ -214,7 +214,6 @@ body.page-products div.view-content {
 	padding-top:50px;
 	/* set to height of window? */
 	height: 678px;
-	overflow: auto;
 }
 
 div.filters-form {
