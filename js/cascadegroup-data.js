@@ -1266,5 +1266,18 @@ jQuery.extend(Drupal.settings, {
             "Matrix": {},
             "Rons_Category": "clear"
         }
+    }, {
+        "node": {
+            "title": "Utility",
+            "Species": "Cotton",
+            "Category": "utility",
+            "Nid": "43",
+            "Path": "cottonwood\/utility.html",
+            "Cutting Face": "cf2",
+            "Limiting Characteristics": "color",
+            "Width": {},
+            "Matrix": {},
+            "Rons_Category": "utility"
+        }
     }]
 });
