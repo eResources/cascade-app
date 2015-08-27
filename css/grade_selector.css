@@ -546,6 +546,11 @@ div.view-grade-selector div.ash li.views-row {
 	background:url(../img/ash_thumb.jpg) no-repeat left top;
 }
 
+div.view-grade-selector div.cottonwood li.views-row {
+	background: url(../cottonwood/images/thumb.png) no-repeat left top;
+	background-size: cover;
+}
+
 div.view-grade-selector div.views-field-field-grade-mark-fid {
 	position:absolute;
 	right:0;
@@ -571,6 +576,10 @@ div.view-grade-selector div.maple div.views-field-field-grade-mark-fid {
 
 div.view-grade-selector div.alder div.views-field-field-grade-mark-fid {
 	background:url(../img/alder_leaf_small.png) no-repeat right bottom;
+}
+div.view-grade-selector div.cottonwood div.views-field-field-grade-mark-fid {
+	background: url(../cottonwood/images/leaf.png) no-repeat right bottom;
+	background-size: contain;
 }
 
 /* print friendly */
