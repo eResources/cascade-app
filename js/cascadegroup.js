@@ -43,86 +43,26 @@ if ($('ul#primary li.active')[0]) {
 	$('div.attachment').prepend('<div class="opener-main"></div>');
 	//$('div.node-type-grade div.content').append('<div class="opener"></div>');
 	
-	
-	$('div.opener-main').click(function() {
-		//console.log('open/close');
-		$(this).toggleClass('open');
-		/* $('div.node-type-grade div.content').toggleClass('open'); */
-		
-		_toggleDrawerMain()
-		//_toggleDrawer()
-		
-	});
-	
-	
-	$('div.opener').click(function() {
-		//console.log('open/close');
-		$(this).toggleClass('open');
-		/* $('div.node-type-grade div.content').toggleClass('open'); */
-		
-		_toggleDrawerProduct()
-		//_toggleDrawer()
-		
-	});
-	
-	function _toggleDrawerMain() {
-	
-		if ($('div.opener').hasClass('open')) {
-			$('div.node-type-grade div.content, div.photo-box').animate({ left: '-300' }, 500);
-		} else {
-			$('div.node-type-grade div.content, div.photo-box').animate({ left: '0' }, 500);
-		}
-		
-		if ($('div.opener-main').hasClass('open')) {
-			$('div.attachment').animate({ left: '-220' }, 500);
-			$('div.view-content').animate({ left: '-220' }, 500);
-			$('div.hider').animate({ left: '20' }, 500);
-		} else {
-			$('div.attachment').animate({ left: '0' }, 500);
-			$('div.view-content').animate({ left: '0' }, 500);
-			$('div.hider').animate({ left: '-60' }, 500);
+	(function() {
 
-			
+		$('.opener-main').click(function() {
+			toggleSidebar( $('.opener-main') );
+		});
+		$('.opener').click(function() {
+			toggleSidebar( $( '.opener' ) );
+		});
+
+		// check window size and close drawer if small
+		if (document.documentElement.clientWidth < 900) {
+			toggleSidebar( $( '.opener-main' ) );
+			toggleSidebar( $( '.opener' ) );
 		}
 
-
-	}
-
-	
-	function _toggleDrawerProduct() {
-	
-		if ($('div.opener').hasClass('open')) {
-			$('div.node-type-grade div.content, div.photo-box').animate({ left: '-250' }, 500);
-			$('div.hider').animate({ left: '20' }, 500);
-			$('div.node-type-grade div.photo-box').animate({ 'max-width' : '800px' }, 500);
-		} else {
-			$('div.node-type-grade div.content, div.photo-box').animate({ left: '0' }, 500);
-			$('div.hider').animate({ left: '-60' }, 500);
-			$('div.node-type-grade div.photo-box').animate({ 'max-width' : '624px' }, 500);
-		}
-		
-		if ($('div.opener-main').hasClass('open')) {
-			$('div.attachment').animate({ left: '-250' }, 500);
-		} else {
-			$('div.attachment').animate({ left: '0' }, 500);
+		function toggleSidebar( $button ) {
+			$button.parents( '.view, .node' ).toggleClass( 'closed' );
 		}
 
-
-	}
-	
-	
-	// check window size and close drawer if small
-	if (document.documentElement.clientWidth < 900) {
-	
-		$('div.opener').addClass('open');
-		$('div.opener-main').addClass('open');
-		
-		
-		_toggleDrawerMain();
-		_toggleDrawerProduct();
-		
-	} else {
-	}
+	})();
 
 
 	// need to call persistently to work with tab switchers

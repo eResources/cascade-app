@@ -30,15 +30,6 @@ body.section-products div#content {
 	min-width: 0;
 }
 
-div.view-grade-selector div.view-content {
-	/* max-width: 580px; */
-	/* min-height: 800px; */
-	width: auto;
-	position: absolute;
-	margin-left: 292px;
-	
-}
-
 body.section-products div#content div.page-content {
 	max-width:1000px;
 	width: auto;
@@ -119,20 +110,43 @@ body.section-products div#content div.page-content {
 	background: #000;
 }
 
+.view,
+.node {
+	overflow: hidden;
+	max-width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /*** open/close drawer ***/
 
-body.section-products div.hider {
+.node .content,
+.view .attachment {
+	overflow: auto;
+    position: relative;
+    left: 0;
+    float: left;
+    height: 800px;
+    width: 265px;
+	border-right: 1px solid #666;
+	-webkit-transition: left .3s ease;
+	transition: left .3s ease;
+}
+.node .hider,
+.view .hider {
 	height: 100%;
  	width: 480px;
  	position: absolute;
- 	margin-left: -480px;
- 	border: 0px solid #f00;
+ 	top: 50px;
+ 	right: 100%;
+ 	margin-right: 0;
  	background-color: #000;
- 	z-index: 999;
+ 	z-index: 10;
+ 	-webkit-transition: margin-right .3s ease;
+ 	transition: margin-right .3s ease;
 }
-
-body.section-products div.opener,
-body.section-products div.opener-main {
+.node .content .opener,
+.view .attachment .opener-main {
 	height: 20px;
 	width: 20px;
 	position: absolute;
@@ -140,31 +154,51 @@ body.section-products div.opener-main {
 	top: 20px;
 	z-index: 99999;
 	cursor: pointer;
-}
-
-
-body.section-products div.opener-main {
-	left: 218px;
-}
-
-body.section-products div.opener,
-body.section-products div.opener-main {
 	background: url(../img/close.png) no-repeat center 0;
 }
-
-body.section-products div.opener.open,
-body.section-products div.opener-main.open {
-	/* background: url(../img/open.png) no-repeat center 0; */
-	/*
--webkit-transition: -webkit-transform .2s ease-in;
-	-webkit-transition: -webkit-transform .1s ease-out;
-*/
-	-ms-transform: rotate(180deg); /* IE 9 */
-    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    transform: rotate(180deg);
-
+.view .attachment .opener-main {
+	left: 218px;
+}
+.view .attachment .filters-form {
+	padding: 60px 26px 60px 0;
+}
+.view .view-content,
+.node .photo-box {
+	position: absolute;
+	-webkit-transition: all .3s ease;
+	transition: all .3s ease;
+}
+.view .view-content {
+	margin-left: 295px;
+}
+.node .photo-box {
+	width: 625px;
+	margin-left: 325px;
 }
 
+.view.closed .attachment {
+	left: -220px;
+}
+.node.closed .content {
+	left: -250px;
+}
+.node.closed .hider,
+.view.closed .hider {
+	margin-right: -30px;
+}
+.node.closed .content .opener,
+.view.closed .attachment .opener-main {
+	-ms-transform: rotate(180deg);
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.view.closed .view-content,
+.node.closed .photo-box {
+	margin-left: 70px
+}
+.node.closed .photo-box {
+	width: 850px;
+}
 
 
 
@@ -244,29 +278,6 @@ div.filters-form input {
 	margin-right: 5px;
 }
 
-div.node-type-grade div.content,
-div.view-grade-selector div.attachment-before {
-    float: left;
-    margin-right: 30px;
-    /* width: 10px; */
-    position:relative;
-    /* set to height of window? */
-    height: 800px;
-	overflow: auto;
-}
-
-div.view-grade-selector div.filters-form {
-	padding: 60px 26px 60px 0;
-}
-
-div.view-grade-selector div.attachment-before {
-	border-right: 1px solid #666;
-}
-
-div.node-type-grade div.content.open {
-	width: 316px;
-}
-
 /* board info CTA */
 
 div.side-cta {
@@ -299,13 +310,8 @@ img.side-footer-logo-index {
 }
 
 div#content-area div.node-type-grade div.content {
-	margin:0;
-	background:none;
 	padding:40px 25px 0 0px;
-	max-width:266px;
 	color:#fff;
-	border-right: 1px solid #666;
-	height: 800px;
 	overflow: scroll;
 	font-family: "Source Sans Pro", sans-serif;
 }
@@ -360,10 +366,8 @@ div.view-grade-selector div.view-content h2 {
 }
 
 div.node-type-grade div.photo-box {
-	max-width:624px;
-	padding:20px 0;
+	padding: 20px 0;
 	max-height: 800px;
-	position: relative;
 	overflow: scroll;
 }
 
