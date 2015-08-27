@@ -39,7 +39,7 @@ jQuery(document).ready(function($) {
 
   // duct tape header to top to avoid having to do a bunch of tedious html fixing
   
-  var type = $('div.field-field-species div.field-item').text();
+  var type = $('div.field-field-species div.field-item').text().trim();
   var name = $('h2.title').clone().children().remove().end().text();
   
   $('h1.title').replaceWith('<h1 class="title">' + type + ": " + name + '</h1>');
