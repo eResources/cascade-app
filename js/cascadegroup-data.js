@@ -1227,5 +1227,18 @@ jQuery.extend(Drupal.settings, {
             },
             "Rons_Category": "crating"
         }
+    }, {
+        "node": {
+            "title": "Select & Better",
+            "Species": "Cotton",
+            "Category": "clear",
+            "Nid": "43",
+            "Path": "cottonwood\/select-and-better.html",
+            "Cutting Face": "cf2",
+            "Limiting Characteristics": "color",
+            "Width": {},
+            "Matrix": {},
+            "Rons_Category": "clear"
+        }
     }]
 });
