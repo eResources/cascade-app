@@ -1239,7 +1239,12 @@ jQuery.extend(Drupal.settings, {
             "Width": {
                 "1": "4-"
             },
-            "Matrix": {},
+            "Matrix": {
+                "4-4": {
+                    "8-3": true,
+                    "10-1": true
+                }
+            },
             "Rons_Category": "clear"
         }
     }, {
@@ -1254,7 +1259,12 @@ jQuery.extend(Drupal.settings, {
             "Width": {
                 "1": "4-"
             },
-            "Matrix": {},
+            "Matrix": {
+                "4-4": {
+                    "8-3": true,
+                    "10-1": true
+                }
+            },
             "Rons_Category": "clear"
         }
     }, {
@@ -1269,7 +1279,12 @@ jQuery.extend(Drupal.settings, {
             "Width": {
                 "1": "4-"
             },
-            "Matrix": {},
+            "Matrix": {
+                "4-4": {
+                    "8-3": true,
+                    "10-1": true
+                }
+            },
             "Rons_Category": "clear"
         }
     }, {
@@ -1282,7 +1297,12 @@ jQuery.extend(Drupal.settings, {
             "Cutting Face": "cf2",
             "Limiting Characteristics": "color",
             "Width": {},
-            "Matrix": {},
+            "Matrix": {
+                "4-4": {
+                    "8-3": true,
+                    "10-1": true
+                }
+            },
             "Rons_Category": "utility"
         }
     }]
