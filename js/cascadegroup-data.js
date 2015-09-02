@@ -1236,7 +1236,9 @@ jQuery.extend(Drupal.settings, {
             "Path": "cottonwood\/1-shop.html",
             "Cutting Face": "cf2",
             "Limiting Characteristics": "color",
-            "Width": {},
+            "Width": {
+                "1": "4-"
+            },
             "Matrix": {},
             "Rons_Category": "clear"
         }
@@ -1249,7 +1251,9 @@ jQuery.extend(Drupal.settings, {
             "Path": "cottonwood\/select-and-better.html",
             "Cutting Face": "cf2",
             "Limiting Characteristics": "color",
-            "Width": {},
+            "Width": {
+                "1": "4-"
+            },
             "Matrix": {},
             "Rons_Category": "clear"
         }
@@ -1262,7 +1266,9 @@ jQuery.extend(Drupal.settings, {
             "Path": "cottonwood\/chop.html",
             "Cutting Face": "cf2",
             "Limiting Characteristics": "color",
-            "Width": {},
+            "Width": {
+                "1": "4-"
+            },
             "Matrix": {},
             "Rons_Category": "clear"
         }
