@@ -1231,7 +1231,7 @@ jQuery.extend(Drupal.settings, {
         "node": {
             "title": "#1 Shop",
             "Species": "Cotton",
-            "Category": "clear",
+            "Category": "clear_cutting",
             "Nid": "43",
             "Path": "cottonwood\/1-shop.html",
             "Cutting Face": "cf2",
@@ -1245,7 +1245,7 @@ jQuery.extend(Drupal.settings, {
                     "10-1": true
                 }
             },
-            "Rons_Category": "clear"
+            "Rons_Category": "clear_cutting"
         }
     }, {
         "node": {
@@ -1254,7 +1254,10 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "43",
             "Path": "cottonwood\/select-and-better.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": {
+                "1": "cf1",
+                "2": "cf2"
+            },
             "Limiting Characteristics": "color",
             "Width": {
                 "1": "4-"
@@ -1265,7 +1268,10 @@ jQuery.extend(Drupal.settings, {
                     "10-1": true
                 }
             },
-            "Rons_Category": "clear"
+            "Rons_Category": {
+                "1": "clear",
+                "2": "clear_cutting"
+            }
         }
     }, {
         "node": {
