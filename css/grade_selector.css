@@ -723,6 +723,11 @@ div.node-type-grade div.species-Maple div.field-field-grade-mark {
 	background-image:url(../img/maple_leaf_big.png);	
 }
 
+div.node-type-grade div.species-Cottonwood div.field-field-grade-mark {
+	background-image:url(../cottonwood/images/leaf.png);
+	background-size: 80px 80px;
+}
+
 div.node-type-grade div.content table {
 	width:100%;
 	line-height:1;
