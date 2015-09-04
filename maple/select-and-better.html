@@ -49,6 +49,9 @@ jQuery(document).ready(function($) {
   var viewer = '<div class="view-controls"><div id="front"><a class="front selected" href="select-and-better.html#"><span>front</span></a></div><div id="back"><a class="back" href="select-and-better.html#"><span>back</span></a></div><div id="cuts"><a href="select-and-better.html#"><span>cuts</span></a></div></div>';
   
   $('div.node-type-grade').append(viewer);
+  if ( 0 === $( '.photo-cuts' ).length ) {
+    $( '#cuts' ).remove();
+  }
   
   
   // add product info cta 

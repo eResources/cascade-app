@@ -825,10 +825,6 @@ div.view-controls {
 	max-width: 100%;
 }
 
-div.view-controls.no-cuts {
-	background: url(../img/bg-switch-short.png) no-repeat;
-}
-
 #back,
 #front,
 #cuts {
