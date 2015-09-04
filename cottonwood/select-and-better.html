@@ -31,6 +31,7 @@
 		<script type="text/javascript" src="../js/drupal.js"></script>
 		<script type="text/javascript" src="../js/jq-ui.js"></script>
 		<script type="text/javascript" src="../js/follow.js"></script>
+		<script src="../js/okzoom.min.js"></script>
 		<script type="text/javascript" src="../js/cascadegroup.js"></script>
 		<script>
 		jQuery(document).ready(function($) {
@@ -52,29 +53,6 @@
 		var cta = '<div class="side-cta"><img src="../img/call-us.png"><p>For more info, <a href="mailto:">email us</a> or give us a call at</p><p class="side-cta-phone">800-228-3065</p></div><img class="side-footer-logo" src="../img/side-footer-logo.png"></div>'
 		
 		$('div.field-field-grade-notes').append(cta);
-		
-		
-		// trigger zoom lense
-		
-		$('div#zoomer a').click(function(){
-		
-			$(this).toggleClass('zoomon');
-			
-			if ($(this).hasClass('zoomon')) {
-			
-					$('img.imagecache').okzoom({
-						width: 200,
-						height: 200,
-						border: "5px solid #fff",
-						shadow: "0 0 5px #000"
-					});
-		
-					} //else {
-						//$.fn.okzoom = null;
-						//$('img.imagecache').unbind('mouseenter mouseleave');
-					//}
-			
-		});
 		
 		// initialize js for grade page
 		_initGradePage();
@@ -230,7 +208,7 @@
 						<div class="field field-type-filefield field-field-front-picture">
 							<div class="field-items">
 								<div class="field-item odd">
-									<a href="images/Select-1F.jpg" class="imagecache imagecache-grade-photo imagecache-imagelink imagecache-grade-photo_imagelink"><img data-okimage="images/Select-2F.jpg" src="images/Select-1F.jpg" alt="" title=""  class="imagecache imagecache-grade-photo" width="500" height="1139" /></a>        </div>
+									<a href="images/Select-1F.jpg" class="imagecache imagecache-grade-photo imagecache-imagelink imagecache-grade-photo_imagelink"><img src="images/Select-1F.jpg" alt="" title=""  class="imagecache imagecache-grade-photo" width="500" height="1139" /></a>        </div>
 								</div>
 							</div>
 						</div>
@@ -239,7 +217,7 @@
 							<div class="field field-type-filefield field-field-back-picture">
 								<div class="field-items">
 									<div class="field-item odd">
-										<a href="images/Select-1B.jpg" class="imagecache imagecache-grade-photo imagecache-imagelink imagecache-grade-photo_imagelink"><img data-okimage="images/Select-2B.jpg" src="images/Select-1B.jpg" alt="" title=""  class="imagecache imagecache-grade-photo" width="500" height="1139" /></a>        </div>
+										<a href="images/Select-1B.jpg" class="imagecache imagecache-grade-photo imagecache-imagelink imagecache-grade-photo_imagelink"><img src="images/Select-1B.jpg" alt="" title=""  class="imagecache imagecache-grade-photo" width="500" height="1139" /></a>        </div>
 									</div>
 								</div>
 							</div>

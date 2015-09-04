@@ -170,7 +170,22 @@ if ($('ul#primary li.active')[0]) {
 		
 	// create cash money div
 	cashMoney = $('<div id="cash-money"></div>');
-	$('div#pro-side').append(cashMoney);	
+	$('div#pro-side').append(cashMoney);
+
+	// Desktop only
+	(function() {
+		if ( $( window ).width() < 900 ) {
+			return;
+		}
+
+		// trigger zoom lense
+		$('img.imagecache').okzoom({
+			width: 200,
+			height: 200,
+			border: "5px solid #fff",
+			shadow: "0 0 5px #000"
+		});
+	})();
 	
 });
 
