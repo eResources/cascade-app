@@ -819,16 +819,22 @@ div.node-type-grade div.info-notes {
 /* grade view controls */
 
 div.view-controls {
-	position: absolute;
-	top: 60px;
-	right: 0;
-	z-index: 999;
+	position: fixed;
+	top: 180px;
+	width: 1000px;
+	max-width: 100%;
 }
 
 div.view-controls.no-cuts {
 	background: url(../img/bg-switch-short.png) no-repeat;
 }
 
+#back,
+#front,
+#cuts {
+	float: right;
+	clear: both;
+}
 div#back a,
 div#front a,
 div#cuts a {

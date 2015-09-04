@@ -728,8 +728,6 @@ function _initGradePage() {
         }
         return false;
     });
-
-    $('div.view-controls').scrollFollow({offset:40});
 }
 
 
