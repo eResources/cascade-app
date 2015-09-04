@@ -178,12 +178,23 @@ if ($('ul#primary li.active')[0]) {
 			return;
 		}
 
-		// trigger zoom lense
-		$('a img.imagecache').okzoom({
-			width: 200,
-			height: 200,
-			border: "5px solid #fff",
-			shadow: "0 0 5px #000"
+		// Trigger zoom lense
+		$( "a img.imagecache" ).load(function() {
+
+			// Only enable zoom if the native image width is larger than the screen image width
+			var $screenImage = $( this );
+			var nativeImage  = new Image();
+			nativeImage.src  = $screenImage.attr( "src" );
+			if ( nativeImage.width < $screenImage.width() ) {
+				return;
+			}
+
+			$screenImage.okzoom({
+				width: 200,
+				height: 200,
+				border: "5px solid #fff",
+				shadow: "0 0 5px #000"
+			});
 		});
 	})();
 	
