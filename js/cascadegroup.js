@@ -179,7 +179,7 @@ if ($('ul#primary li.active')[0]) {
 		}
 
 		// trigger zoom lense
-		$('img.imagecache').okzoom({
+		$('a img.imagecache').okzoom({
 			width: 200,
 			height: 200,
 			border: "5px solid #fff",
