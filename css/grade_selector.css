@@ -197,7 +197,7 @@ body.section-products div#content div.page-content {
 	margin-left: 70px
 }
 .node.closed .photo-box {
-	width: 850px;
+	width: calc( 100% - 70px );
 }
 
 
@@ -367,14 +367,10 @@ div.view-grade-selector div.view-content h2 {
 
 div.node-type-grade div.photo-box {
 	padding: 20px 0;
-	max-height: 800px;
-	overflow: scroll;
 }
 
 div.node-type-grade div.photo-box img.imagecache-grade-photo {
-	width: auto !important;
-	height: auto !important;
-	max-width: 1000px;
+	width: 100%;
 }
 
 
@@ -827,13 +823,8 @@ div.node-type-grade div.info-notes {
 div.view-controls {
 	position: absolute;
 	top: 60px;
-	padding-top:20px;
-	padding-left: 13px;
-	margin-left: 574px;
+	right: 0;
 	z-index: 999;
-	height: 177px;
-	width: 64px;
-	right: 34px;
 }
 
 div.view-controls.no-cuts {
