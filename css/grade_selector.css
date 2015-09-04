@@ -122,11 +122,9 @@ body.section-products div#content div.page-content {
 
 .node .content,
 .view .attachment {
-	overflow: auto;
     position: relative;
     left: 0;
     float: left;
-    height: 800px;
     width: 265px;
 	border-right: 1px solid #666;
 	-webkit-transition: left .3s ease;
