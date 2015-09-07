@@ -124,6 +124,7 @@ body.section-products div#content div.page-content {
 .view .attachment {
     position: relative;
     left: 0;
+    z-index: 1;
     float: left;
     width: 265px;
 	border-right: 1px solid #666;
@@ -804,16 +805,25 @@ div.node-type-grade h4.tipdown-open {
 	background-position:left -15px;
 }
 
-div.node-type-grade div.info {
-	/* padding-left:15px; */
+.notes-header {
+	overflow: hidden;
 }
-
-
-div.node-type-grade div.info-notes {
-/*	overflow-x: none;
-	overflow-y: auto;
-	height:400px;
-*/}
+.notes-header__title {
+	float: left;
+}
+.notes-header__link {
+	color: #fff !important;
+	float: right;
+}
+.notes-header__link:after {
+	content: '';
+	display: inline-block;
+	height: 14px;
+	width: 17px;
+	margin-left: 5px;
+	background: url(../img/glossary/glossary-icon.png) no-repeat 0 0;
+	vertical-align: middle;
+}
 
 
 /* grade view controls */
