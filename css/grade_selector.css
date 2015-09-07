@@ -1025,4 +1025,28 @@ a.glossaryTerm:hover { border-bottom: none; text-decoration: none; }
 #glossaryTip > #glossaryClose { /* background: url('ui_close_sm.png') no-repeat; */ }
 
 
-
+#glossary-content {
+	margin-top: 50px;
+}
+.glossary__entry {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.glossary__entry + .glossary__entry {
+	border-top: 1px solid #666;
+}
+.glossary__image-wrapper,
+.glossary__content {
+	display: table-cell;
+	vertical-align: middle;
+}
+.glossary__image--stand-alone {
+	display: block;
+}
+.glossary__content {
+	padding-left: 20px;
+	color: #fff;
+}
+.glossary--list .glossary__image--inline {
+	display: none;
+}
