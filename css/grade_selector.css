@@ -995,10 +995,10 @@ a.glossaryTerm:hover { border-bottom: none; text-decoration: none; }
 	height: auto;
 }
 
-#glossaryContent img {
-	vertical-align: middle;
+#glossaryContent .glossary__image--inline {
 	padding-bottom: 10px;
-	padding-left: 17px;
+	margin-right: auto;
+	margin-left: auto;
 }
 #glossaryContent h6 {
 	margin: 0 0 0.6em;
