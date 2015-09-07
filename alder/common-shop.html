@@ -67,10 +67,7 @@ jQuery(document).ready(function($) {
   // create glossary autolinks 
   $('body').glossary('../js/terms.json', { ignorecase: true });
   
-  // set height of scrolly divs to height of window
-  var h = ($(window).height() - 120);
-  $('div#content-area div.node-type-grade div.content').css('height',h);
-  $('div.node-type-grade div.photo-box').css('height',h);
+  
 
   
 });
