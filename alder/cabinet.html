@@ -65,7 +65,7 @@ jQuery(document).ready(function($) {
   _initGradePage();
   
   // create glossary autolinks 
-  $('body').glossary('../js/terms.json');
+  $('body').glossary('../js/terms.json', { ignorecase: true });
   
   // set height of scrolly divs to height of window
   var h = ($(window).height() - 120);
