@@ -1050,6 +1050,11 @@ a.glossaryTerm:hover { border-bottom: none; text-decoration: none; }
 	display: table-cell;
 	vertical-align: middle;
 }
+.glossary__image-wrapper {
+	overflow: hidden;
+	border: 1px solid #666;
+	border-radius: 50%;
+}
 .glossary__image--stand-alone {
 	display: block;
 }
