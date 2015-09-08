@@ -369,7 +369,9 @@ div.node-type-grade div.photo-box {
 }
 
 div.node-type-grade div.photo-box img.imagecache-grade-photo {
-	width: 100%;
+	width: 650px;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 
