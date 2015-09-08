@@ -145,18 +145,44 @@ body.section-products div#content div.page-content {
  	transition: margin-right .3s ease;
 }
 .node .content .opener,
-.view .attachment .opener-main {
-	height: 20px;
+.view .attachment .opener-main,
+.node .content .opener:before,
+.view .attachment .opener-main:before,
+.node .content .opener:after,
+.view .attachment .opener-main:after {
+	display: block;
 	width: 20px;
+}
+.node .content .opener,
+.view .attachment .opener-main {
 	position: absolute;
 	left: 250px;
 	top: 20px;
 	z-index: 99999;
+	height: 1px;
 	cursor: pointer;
-	background: url(../img/close.png) no-repeat center 0;
+	background-color: #fff;
 }
 .view .attachment .opener-main {
 	left: 218px;
+}
+.node .content .opener:before,
+.view .attachment .opener-main:before,
+.node .content .opener:after,
+.view .attachment .opener-main:after {
+	content: '';
+	position: absolute;
+}
+.node .content .opener:before,
+.view .attachment .opener-main:before {
+	top: -5px;
+	padding-bottom: 5px;
+	border-top: 1px solid #fff;
+}
+.node .content .opener:after,
+.view .attachment .opener-main:after {
+	padding-top: 5px;
+	border-bottom: 1px solid #fff;
 }
 .view .attachment .filters-form {
 	padding: 60px 26px 60px 0;
