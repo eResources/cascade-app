@@ -52,12 +52,15 @@ if ($('ul#primary li.active')[0]) {
 			toggleSidebar( $( '.opener' ) );
 		});
 
-		// check window size and close drawer if small
-		if (document.documentElement.clientWidth < 900) {
-			toggleSidebar( $( '.opener-main' ) );
-			toggleSidebar( $( '.opener' ) );
-		}
+		closeMobileSidebar();
+		$( window ).resize( closeMobileSidebar );
 
+		function closeMobileSidebar() {
+			if (document.documentElement.clientWidth < 900) {
+				$( '.opener-main' ).parents( '.view' ).addClass( 'closed' );
+				$( '.opener'      ).parents( '.node' ).addClass( 'closed' );
+			}
+		}
 		function toggleSidebar( $button ) {
 			$button.parents( '.view, .node' ).toggleClass( 'closed' );
 		}
