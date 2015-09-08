@@ -67,7 +67,7 @@ body.section-products div#contact a {
 	color: #008aeb;
 }
 
-body.section-products a#back {
+body.section-products a#back-1 {
 	position: absolute;
 	display: block;
 	top: 92px;
@@ -835,75 +835,39 @@ div.view-controls {
 	max-width: 100%;
 }
 
-#back,
-#front,
-#cuts {
+#back-1,
+#front-1,
+#cuts-1 {
 	float: right;
 	clear: both;
-}
-div#back a,
-div#front a,
-div#cuts a {
+	overflow: hidden;
+	display: block;
+	height: 35px;
+	width: 35px;
+	border: 0;
 	background: url(../img/switch.png) no-repeat 0  0px;
 	background-size: 35px;
 }
 
-div#front a {
-	display: block;
-	height: 35px;
-	width: 35px;
-	overflow: hidden;
-	margin-bottom: 4px;
-	margin-top: 3px;
-}
-
-div#front a.selected {
+#front-1.selected {
 	background-position: 0 -111px;
 }
-
-div#front a span {
-	margin-left: -500px;
-}
-
-div#back {
-	margin-top: -4px;
-}
-
-div#back a {
-	display: block;
-	height: 35px;
-	width: 35px;
-	overflow: hidden;
-	margin-bottom: 4px;
+#back-1 {
 	background-position: 0 -35px;
 }
-
-div#back a.selected {
+#back-1.selected {
 	background-position: 0 -147px;
 }
-
-div#back a span {
-	margin-left: -500px;
-}
-
-div.hide {
-	display: none;
-}
-
-div#cuts a {
-	display: block;
-	height: 35px;
-	width: 35px;
-	overflow: hidden;
+#cuts-1 {
 	background-position: 0 -76px;
+	margin-top: 4px;
 }
-
-div#cuts a.selected {
+#cuts-1.selected {
 	background-position: 0 -188px;
 }
 
-div#cuts a span {
-	margin-left: -500px;
+.hide {
+	display: none;
 }
 
 div#content-bottom a.button {
