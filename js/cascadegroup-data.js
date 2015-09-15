@@ -141,12 +141,6 @@ jQuery.extend(Drupal.settings, {
                     "8-1": true,
                     "8-3": true,
                     "10-1": true
-                },
-                "10-4": {
-                    "10-1": true
-                },
-                "12-4": {
-                    "10-1": true
                 }
             },
             "Rons_Category": {
@@ -809,6 +803,12 @@ jQuery.extend(Drupal.settings, {
                 "4-4": {
                     "8-1": true,
                     "10-1": true
+                },
+                "10-4": {
+                  "10-1": true
+                },
+                "12-4": {
+                  "10-1": true
                 }
             },
             "Rons_Category": "clear_cutting"
@@ -830,6 +830,12 @@ jQuery.extend(Drupal.settings, {
                 "4-4": {
                     "8-1": true,
                     "10-1": true
+                },
+                "10-4": {
+                  "10-1": true
+                },
+                "12-4": {
+                  "10-1": true
                 }
             },
             "Rons_Category": "clear_cutting"
@@ -1001,6 +1007,10 @@ jQuery.extend(Drupal.settings, {
                 "10-4": {
                     "8-1": true,
                     "10-1": true
+                },
+                "12-4": {
+                  "8-1": true,
+                  "10-1": true
                 }
             },
             "Rons_Category": "clear_cutting"
@@ -1108,6 +1118,10 @@ jQuery.extend(Drupal.settings, {
                 "10-4": {
                     "8-1": true,
                     "10-1": true
+                },
+                "12-4": {
+                  "8-1": true,
+                  "10-1": true
                 }
             },
             "Rons_Category": "clear_cutting"
