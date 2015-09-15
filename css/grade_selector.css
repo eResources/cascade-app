@@ -321,7 +321,7 @@ div.side-cta p {
 div.side-cta p.side-cta-phone {
 	font-size: 40px;
 	color: #fff;
-}	
+}
 
 img.side-footer-logo {
 	float: right;
@@ -366,7 +366,7 @@ width:131px;
 	height:131px;
 */
 	/* margin:-1px 16px 16px -1px; */
-	box-shadow:2px 2px 10px rgba(0,0,0,.3);	
+	box-shadow:2px 2px 10px rgba(0,0,0,.3);
 }
 
 div.view-grade-selector li.views-row div.views-field-field-front-picture-fid {
@@ -467,7 +467,7 @@ div.species-header input#edit-reset {
 }
 
 div.species label {
-	padding: 50px 20px;	
+	padding: 50px 20px;
 	display:block;
 }
 
@@ -531,7 +531,7 @@ div.view-grade-selector div.view-content div.species-group {
 }
 
 div.view-grade-selector li.views-row div.views-field-title {
-	line-height:1.3;	
+	line-height:1.3;
 	width:90px;
 	z-index:1;
 	position:relative;
@@ -609,7 +609,7 @@ div.view-grade-selector div.cottonwood div.views-field-field-grade-mark-fid {
 div#grade-selector-buttons {
 	position: absolute;
 	top: 48px;
-	right: -591px;	
+	right: -591px;
 }
 
 div#grade-selector-buttons a.button {
@@ -679,7 +679,7 @@ div.node-type-grade div.content div.field-field-species {
 	color:#fff;
 	/* text-shadow:0px 1px 0px #fff; */
 	margin-bottom:0;
-	
+
 	/* hide for now */
 	display: none;
 }
@@ -698,7 +698,7 @@ div.node-type-grade div.grade-meta {
 	margin-top:-10px;
 	margin-bottom:20px;
 	font-family: "Source Sans Pro", sans-serif;
-	
+
 }
 
 div.node-type-grade div.grade-meta div.category {
@@ -709,7 +709,7 @@ div.node-type-grade div.grade-meta div.category {
 
 
 div.node-type-grade div.content div.field-field-cuttings {
-	/* border-top:1px solid #D9D9D9; */	
+	/* border-top:1px solid #D9D9D9; */
 	padding-top:10px;
 	margin-top:30px;
 }
@@ -720,7 +720,7 @@ div.node-type-grade div.content h2.title {
 	line-height:1;
 	margin:0;
 	text-shadow:0px 1px 0px #fff;
-	
+
 	/* hide for now */
 	display: none;
 }
@@ -739,11 +739,11 @@ div.node-type-grade div.field-field-grade-mark img {
 }
 
 div.node-type-grade div.species-Ash div.field-field-grade-mark {
-	background-image:url(../img/ash_leaf_big.png);	
+	background-image:url(../img/ash_leaf_big.png);
 }
 
 div.node-type-grade div.species-Maple div.field-field-grade-mark {
-	background-image:url(../img/maple_leaf_big.png);	
+	background-image:url(../img/maple_leaf_big.png);
 }
 
 div.node-type-grade div.species-Cottonwood div.field-field-grade-mark {
@@ -765,13 +765,13 @@ div.node-type-grade div.content table th {
 }
 
 div.node-type-grade div.content table td {
-	border-right:1px solid #D9D9D9;	
+	border-right:1px solid #D9D9D9;
 }
 
 div.node-type-grade div.content table tbody {
-	border-top:1px solid #D9D9D9;	
-	border-bottom:1px solid #D9D9D9;	
-	border-left:1px solid #D9D9D9;	
+	border-top:1px solid #D9D9D9;
+	border-bottom:1px solid #D9D9D9;
+	border-left:1px solid #D9D9D9;
 }
 
 div.node-type-grade div.content table span.bullet {
@@ -796,7 +796,7 @@ div.node-type-grade div.content table tr.odd {
 div.node-type-grade div.content table tr.even,
 div.node-type-grade div.content table tr.odd {
 	background:none;
-	border-top:1px solid #D9D9D9;	
+	border-top:1px solid #D9D9D9;
 }
 
 /*
@@ -807,7 +807,7 @@ table tr.odd {
 
 h4.tipdown {
 	cursor:pointer;
-	-moz-user-select: none; 
+	-moz-user-select: none;
   	-khtml-user-select: none;
 	-webkit-user-select: none;
 	/*
@@ -819,17 +819,17 @@ background:url(../img/tipdowns.png) no-repeat left 7px;
 }
 
 div.node-type-grade h4.tipdown {
-	/* border-top:1px solid #D9D9D9; */	
+	/* border-top:1px solid #D9D9D9; */
 	font-size:14px;
 	background-position:left 13px;
-	padding:10px 10px 10px 15px;	
+	padding:10px 10px 10px 15px;
 }
 
 h4.tipdown-open {
 	background-position:left -22px;
 }
 
-div.node-type-grade h4.tipdown-open { 
+div.node-type-grade h4.tipdown-open {
 	background-position:left -15px;
 }
 
@@ -949,7 +949,7 @@ body.page-grade-selector div#footer {
 	margin-bottom: 30px;
 	height: 65px;
 }
-  	
+
 body.node-type-grade div#footer a,
 body.page-grade-selector div#footer a,
 body.node-type-grade div#footer a:link,

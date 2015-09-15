@@ -836,11 +836,11 @@ jQuery.extend(Drupal.settings, {
         }
     }, {
         "node": {
-            "title": "Standard Frame",
+            "title": "Frame",
             "Species": "Ash",
             "Category": "rustic",
             "Nid": "17",
-            "Path": "ash\/standard-frame.html",
+            "Path": "ash\/frame.html",
             "Cutting Face": "cf2",
             "Limiting Characteristics": {
                 "1": "knots",
