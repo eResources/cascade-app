@@ -9,20 +9,20 @@ jQuery(document).ready(function($) {
 				$(this).stop().animate({'top':-5}, 200);
 			},
 			function() {
-				$(this).stop().animate({'top':-10}, 125);			
+				$(this).stop().animate({'top':-10}, 125);
 			}
-		);			
+		);
 	}
-	
-	
+
+
 	// header back button
 	$('a#back').click(function(){
         parent.history.back();
         return false;
     });
-	
 
-	
+
+
 	if ($('body').hasClass('node-type-grade')) {
 		_initGradePage();
 	}
@@ -35,14 +35,14 @@ if ($('ul#primary li.active')[0]) {
 */
 
 	/**** open/close grade details ****/
-	
+
 	$('div.node-type-grade').prepend('<div class="hider"></div>');
 	$('div.view-grade-selector').prepend('<div class="hider"></div>');
-	
+
 	$('div.node-type-grade div.content').prepend('<div class="opener"></div>');
 	$('div.attachment').prepend('<div class="opener-main"></div>');
 	//$('div.node-type-grade div.content').append('<div class="opener"></div>');
-	
+
 	(function() {
 
 		$('.opener-main').click(function() {
@@ -71,106 +71,106 @@ if ($('ul#primary li.active')[0]) {
 	// need to call persistently to work with tab switchers
 	_buildProductContentTabs();
 	//_zoom();
-	
+
 	//alder popup
 	$('a#alder-popup-link').click(function() {
 		$('div#alder-or-maple').fadeIn();
 		return false;
-		
+
 	})
-	
+
 	$('div#alder-or-maple').click(function() {
 		$(this).fadeOut();
 	})
-	
+
 	$('body').click(function() {
 		$('div#alder-or-maple').fadeOut();
 	})
-	
+
 	$("p#talk-to-buyer").click(function() {
     	$('html, body').animate({
         	scrollTop: $("div#block-views-staff-block_2").offset().top
 		}, 1500);
 	})
 
-	
+
 	// create value array
 	valueArray = [];
-	
+
 	// create messages
-	
-	v1 = 'We might not be the right fit, but we probably know someone who is, call anytime for references.'						
-	v2 = 'Your value may not be at its peak, but we are able to help you get there... shoot us a call.'						
-	v3 = 'Sounds like the start of something great, lets talk about your options.'							
-	v4 = 'You have a nice amount of value possibly, we would love to help you maximize your return.'						
-	v5 = 'Boy, that sounds like you are ready to make some money, lets talk.'							
-	v6 = 'College fund or new fishing boat? You have some great value here.'						
-	v7 = 'Hold the phones, I can be there tomorrow. You have prime value in your stand.'							
-	v8 = 'Wow! What kind of magic beans did you find? Double check your survey answers.'							
+
+	v1 = 'We might not be the right fit, but we probably know someone who is, call anytime for references.'
+	v2 = 'Your value may not be at its peak, but we are able to help you get there... shoot us a call.'
+	v3 = 'Sounds like the start of something great, lets talk about your options.'
+	v4 = 'You have a nice amount of value possibly, we would love to help you maximize your return.'
+	v5 = 'Boy, that sounds like you are ready to make some money, lets talk.'
+	v6 = 'College fund or new fishing boat? You have some great value here.'
+	v7 = 'Hold the phones, I can be there tomorrow. You have prime value in your stand.'
+	v8 = 'Wow! What kind of magic beans did you find? Double check your survey answers.'
 	v9 = 'Bummer, you might need a truckload of manure to fix that soil problem... might want to check your survey answers.'
-	
+
 	// deactivate all buttons
 	$('div.sec ul li').addClass('inactive');
-	
-	// 
+
+	//
 	$('div#sec-1 ul li a').click(function() {
 		$(this).parent().siblings().addClass('inactive');
 		$(this).parent().removeClass('inactive');
-		
+
 		// get values from ids
 		var value = $(this).parent().attr('id');
-		
+
 		valueArray[ 0 ] = value;
-		
+
 		_checkArray(valueArray);
 
 		return false;
 	})
-	
+
 	$('div#sec-2 ul li a').click(function() {
 		$(this).parent().siblings().addClass('inactive');
 		$(this).parent().removeClass('inactive');
-		
+
 		// get values from ids
 		var value = $(this).parent().attr('id');
-		
+
 		valueArray[ 1 ] = value;
-		
+
 		_checkArray(valueArray);
 
 		return false;
 	})
-	
+
 	$('div#sec-3 ul li a').click(function() {
 		$(this).parent().siblings().addClass('inactive');
 		$(this).parent().removeClass('inactive');
-		
+
 		// get values from ids
 		var value = $(this).parent().attr('id');
-		
+
 		valueArray[ 2 ] = value;
-		
+
 		_checkArray(valueArray);
 
 		return false;
 	})
-	
+
 	// move log buyer guys above chainsaw/info
 	$('div#block-views-staff-block_2').prependTo("#buyers-go-here");
-	
-	//add h3s to profiles 
-	
-	//$('div#block-views-staff-block_2 div#node-53').prepend('<h3>Contact me if your trees are in this region:</h3>');	
+
+	//add h3s to profiles
+
+	//$('div#block-views-staff-block_2 div#node-53').prepend('<h3>Contact me if your trees are in this region:</h3>');
 	//$('div#block-views-staff-block_2 div#node-51').prepend('<h3>Contact me if your trees are in this region:</h3>');
-	
-	
-	//$('div#block-views-staff-block_2 div#node-98').prepend('<h3 class="border-white">Log buying staff</h3>');		
-	
+
+
+	//$('div#block-views-staff-block_2 div#node-98').prepend('<h3 class="border-white">Log buying staff</h3>');
+
 	$('<div id="buyers-header"></div>').prependTo('#buyers-go-here');
 	$('<h3>Contact the Log Buyer below that services your area:</h3>').prependTo('#buyers-header');
 	$('<h2>Ready to talk?</h2>').prependTo('#buyers-header');
-		
-		
+
+
 	// create cash money div
 	cashMoney = $('<div id="cash-money"></div>');
 	$('div#pro-side').append(cashMoney);
@@ -192,15 +192,19 @@ if ($('ul#primary li.active')[0]) {
 				return;
 			}
 
-			$screenImage.okzoom({
-				width: 200,
-				height: 200,
-				border: "5px solid #fff",
-				shadow: "0 0 5px #000"
+			$( '#zoomer' ).click(function() {
+				$screenImage.okzoom({
+					width: 200,
+					height: 200,
+					border: "5px solid #fff",
+					shadow: "0 0 5px #000"
+				});
+
+				return false;
 			});
 		});
 	})();
-	
+
 });
 
 function _cashBar(e) {
@@ -210,7 +214,7 @@ switch(e) {
 		$('div#value').animate({height: 238});
 		$('div#cash-money').fadeOut();
 		break;
-	case 'd2': 
+	case 'd2':
 		$('div#value').animate({height: 288});
 		$('div#cash-money').fadeOut();
 		break;
@@ -228,13 +232,13 @@ switch(e) {
 		});
 		break;
 	}
-	
+
 }
 
 function _checkArray(e) {
 
 
-	
+
 if (e == "a1,b1,c1") {
 		_changeMessage(v1);
 		_cashBar('d1');
@@ -436,7 +440,7 @@ if (e == "a1,b1,c1") {
 	} else {
 		// nothing else
 	}
-	
+
 
 }
 
@@ -452,10 +456,10 @@ function _changeMessage(e) {
 function _initGradeSelector() {
 
 	$('div.grade-selector-filters input[type="checkbox"], div.grade-selector-filters input[type="radio"]').click(_filterGrades);
-	
+
 	$('input.filter-reset').click(function() {
 		$('.grade-selector-filters input:checked').removeAttr('checked');
-		
+
 		_filterGrades();
 	});
 	$('li.views-row').css('cursor','pointer').click(function() {
@@ -472,7 +476,7 @@ $('div.grade-selector-filters div.collapsible h4').each(function() {
 			$(this).toggleClass("tipdown-open").next().stop(true,true).slideToggle(250);
 		});
 		// check for values and show if there is one checked
-		var v = $(this).next().find('input:checked').val(); 
+		var v = $(this).next().find('input:checked').val();
 		if (v && v != 'All') {
 			$(this).click();
 		}
@@ -488,12 +492,12 @@ $('div.grade-selector-filters div.collapsible h4').each(function() {
 function _filterGrades() {
 	var nodes = Drupal.settings.nodes;
 	var node;
-	
+
 	// handle radio groups first
 	var Species = $('input[name="Species"]:checked').val();
 	var Category = $('input[name="Category"]:checked').val();
-	
-	// checkboxes and their values 
+
+	// checkboxes and their values
 	// Note although "Rons_category" is a radio button, it has the option of multiple values
 	var Rons_Category = _getCheckboxValues('Rons_Category');
 	var Thickness = _getCheckboxValues('Thickness');
@@ -501,7 +505,7 @@ function _filterGrades() {
 	var Width = _getCheckboxValues('Width');
 	var Defects = _getCheckboxValues('Defects');
 	var Face = _getCheckboxValues('Cutting Face');
-	
+
 	// loop through and set a show variable on each JSON node object
 	// start with True, then progressively set items to false and continue to the next node
 	for (var i in nodes) {
@@ -511,24 +515,24 @@ function _filterGrades() {
 			if (node.Species !== Species) {
 				node.show = false;
 				continue;
-			} 			
+			}
 		}
 		/*
 		if (Category && Category != 'All') {
 			if (node.Category !== Category) {
 				node.show = false;
 				continue;
-			} 			
+			}
 		}
 		*/
 		if (Rons_Category && Rons_Category != 'All') {
 			if (!_checkForFilterValue(node.Rons_Category, Rons_Category)) {
 				node.show = false;
 				continue;
-			} 			
+			}
 		}
-		
-		
+
+
 		if (Width.length) {
 			if (!_checkForFilterValue(node.Width, Width)) {
 				node.show = false;
@@ -549,7 +553,7 @@ function _filterGrades() {
 				continue;
 			}
 		}
-	
+
 		// Now handle Thickness and Length Pairings
 		// Edge case, only one selected
 		if (Thickness.length || Length.length) {
@@ -559,7 +563,7 @@ function _filterGrades() {
 					node.show = false;
 					continue;
 				}
-				
+
 			} else if (Length.length && !Thickness.length) {
 				if (!_checkForLengths(node.Matrix, Length)) {
 					node.show = false;
@@ -574,27 +578,27 @@ function _filterGrades() {
 						node.show = false;
 						continue;
 					}
-				}				
+				}
 			}
-			
+
 		}
-		
+
 	}
-	
-	
+
+
 	// loop through Nodes JSON object and set item to show or hide
-	var $tiles = $('div.view-grade-selector li.views-row');	
-	
+	var $tiles = $('div.view-grade-selector li.views-row');
+
 	for (var n in nodes) {
 		node = nodes[n].node;
 		var p = unescape(node.Path);
 		// todo replace with ID selector, right now, rely on linking the Path/URL
 		var $tile = $tiles.find('a[href="'+p+'"]').parents('li.views-row');
-		
+
 		if (node.show == true) {
-			$tile.addClass('show').stop(true,true).show(333);			
+			$tile.addClass('show').stop(true,true).show(333);
 		} else {
-			$tile.removeClass('show').stop(true,true).hide(250);			
+			$tile.removeClass('show').stop(true,true).hide(250);
 		}
 	}
 
@@ -606,8 +610,8 @@ function _filterGrades() {
 		} else {
 			$(this).find('h2').stop(true,true).hide(250);
 		}
-		
-	});	
+
+	});
 
 	_countTiles();
 }
@@ -643,14 +647,14 @@ function _checkForFilterValue(obj, arr) {
 				return false;
 			}
 		}
-	} 
+	}
 	else {
 		for (var o in arr) {
 			if (!_objectContains(obj, arr[o])) {
 				return false;
 			}
 		}
-	}	
+	}
 	return true;
 }
 
@@ -670,23 +674,23 @@ function _objectContains(obj, val) {
 function _checkForLengths(matrix, lengths) {
 	// check for an existence of each length. If the length does not exist in any width, return false
 	var len;
-	
+
 	for (var l in lengths) {
 		len = lengths[l];
 		var lenpresent = false;
 
 		// check all thickness for existence of this length
-		for (var i in matrix) {			
+		for (var i in matrix) {
 			if (matrix[i][len]) {
-				lenpresent = true;				
+				lenpresent = true;
 			}
 		}
-		
+
 		if (!lenpresent) {
 			return false;
 		}
 	}
-	return true;		
+	return true;
 }
 
 
@@ -701,11 +705,11 @@ function _initGradePage() {
         });
     });
 */
-    
+
     if ($('div#cuts').length == 0) {
  		$('div.view-controls').addClass('no-cuts');
 	}
-    
+
     $('div.photo a').click(function () {
         return false;
     });
@@ -755,11 +759,11 @@ function _buildProductContentTabs() {
 	var $label;
 	var l = '';
 	var $newcontent = $('<div class="tabbed-content"></div>');
-	
+
 	// assuming body is the first field here.
 	$('div#node-93 div.content h2').each(function() {
-		
-		$link = $('<li><a href="#">'+$(this).text()+'</a></li>');		
+
+		$link = $('<li><a href="#">'+$(this).text()+'</a></li>');
 		var $div = $('<div class="tab clearfix"></div>');
 
 		// loop through siblings and add content until we hit an h2
@@ -774,28 +778,28 @@ function _buildProductContentTabs() {
 
 		// add tab link and setup click action
 		$menu.find('ul').append($link);
-		$link.click(function() { 
+		$link.click(function() {
 			var index = $(this).parent().find('li').index($(this));
 			$(this).addClass('active');
-			_showProductContentIndex(index); 
+			_showProductContentIndex(index);
 			return false;
 		});
 	});
-	
+
 	$('div#node-93 div.content').html($newcontent);
-	_showProductContentIndex(0, false);	
+	_showProductContentIndex(0, false);
 }
 
 
 function _showProductContentIndex(i, fade) {
 	$('div#node-93 div.tabbed-content div.tab:eq(0), div.node-type-page div.tabbed-content div.tab:eq(1)').hide();
 	if (fade == false) {
-		$('div#node-93 div.tabbed-content div.tab:eq('+i+')').stop().show(0); 
+		$('div#node-93 div.tabbed-content div.tab:eq('+i+')').stop().show(0);
 	} else {
 		$('div#node-93 div.tabbed-content div.tab:eq('+i+')').stop().fadeIn(500, function() {
-		}); 		
+		});
 	}
-	
+
 	//show().fadeTo(0, 0.01).stop(true,true).fadeTo(500,1);
 	$('div.product-tabs li').removeClass('active');
 	$('div.product-tabs li:eq('+i+')').addClass('active');

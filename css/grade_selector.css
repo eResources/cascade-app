@@ -871,7 +871,8 @@ div.view-controls {
 
 #back,
 #front,
-#cuts {
+#cuts,
+#zoomer {
 	float: right;
 	clear: both;
 }
@@ -880,6 +881,18 @@ div#front a,
 div#cuts a {
 	background: url(../img/switch.png) no-repeat 0  0px;
 	background-size: 35px;
+}
+#zoomer,
+#zoomer a {
+	display: block;
+	height: 35px;
+	width: 35px;
+	margin-top: 5px;
+}
+#zoomer a {
+	background: url(../img/magnifying-glass.png) no-repeat center center;
+	background-size: 20px;
+	text-indent: -9999px;
 }
 
 div#front a {
