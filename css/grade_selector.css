@@ -136,7 +136,7 @@ body.section-products div#content div.page-content {
 	height: 100%;
  	width: 480px;
  	position: absolute;
- 	top: 50px;
+ 	top: 30px;
  	right: 100%;
  	margin-right: 0;
  	background-color: #000;
@@ -202,14 +202,16 @@ body.section-products div#content div.page-content {
 }
 
 .view.closed .attachment {
-	left: -220px;
+	left: -200px;
 }
 .node.closed .content {
-	left: -250px;
+	left: -230px;
 }
-.node.closed .hider,
 .view.closed .hider {
-	margin-right: -30px;
+	margin-right: -50px;
+}
+.node.closed .hider {
+	margin-right: -50px;
 }
 .node.closed .content .opener,
 .view.closed .attachment .opener-main {
@@ -217,7 +219,9 @@ body.section-products div#content div.page-content {
     -webkit-transform: rotate(180deg);
     transform: rotate(180deg);
 }
-.view.closed .view-content,
+.view.closed .view-content {
+	margin-left: 90px;
+}
 .node.closed .photo-box {
 	margin-left: 70px
 }
