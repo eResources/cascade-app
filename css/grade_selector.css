@@ -199,6 +199,17 @@ body.section-products div#content div.page-content {
 .node .photo-box {
 	width: 625px;
 	margin-left: 325px;
+	padding: 20px 0;
+}
+.node .photo-box a {
+	display: block;
+}
+.node .photo-box img {
+	max-width: 100%;
+	width: 650px;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
 }
 
 .view.closed .attachment {
@@ -223,7 +234,7 @@ body.section-products div#content div.page-content {
 	margin-left: 90px;
 }
 .node.closed .photo-box {
-	margin-left: 70px
+	margin-left: 70px;
 }
 .node.closed .photo-box {
 	width: calc( 100% - 70px );
@@ -392,16 +403,6 @@ div.view-grade-selector div.view-content h2 {
 	font-size:1.3em;
 	margin-bottom:20px;
 	color:#bbb;
-}
-
-div.node-type-grade div.photo-box {
-	padding: 20px 0;
-}
-
-div.node-type-grade div.photo-box img.imagecache-grade-photo {
-	width: 650px;
-	margin-right: auto;
-	margin-left: auto;
 }
 
 
