@@ -463,13 +463,6 @@ div.species {
 div.species-header h4 {
 	float: left;
 }
-div.species-header input#edit-reset {
-	float: right;
-	display: block;
-	height: 20px;
-	width: 41px;
-	background: transparent;
-}
 
 div.species label {
 	padding: 50px 20px;
@@ -657,10 +650,9 @@ div.nothing {
 input#edit-reset {
 	border: 0;
 	background: transparent;
-	color: #fff;
 	float: right;
+	display: block;
 	cursor: pointer;
-	padding-top: 2px;
 }
 
 input#new-search {
@@ -699,8 +691,7 @@ div.node-type-grade div.content div.field-field-cutting-face {
 
 div.node-type-grade div.grade-meta {
 	position:relative;
-	margin-top:-10px;
-	margin-bottom:20px;
+	min-height: 100px;
 	font-family: "Source Sans Pro", sans-serif;
 
 }
@@ -738,7 +729,8 @@ div.node-type-grade div.content h2.title {
 
 div.node-type-grade div.field-field-grade-mark {
 	width:100%;
-	position:relative;
+	position:absolute;
+	bottom: 0;
 	background:url(../img/alder_leaf_big.png) no-repeat right bottom;
 	height:100px;
 }
@@ -898,6 +890,11 @@ div#cuts a {
 	background: url(../img/magnifying-glass.png) no-repeat center center;
 	background-size: 20px;
 	text-indent: -9999px;
+}
+@media screen and ( max-width: 900px ) {
+	#zoomer {
+		display: none;
+	}
 }
 
 div#front a {
