@@ -34,7 +34,14 @@
 
 body {
   margin: 0;
-  font: 28px/1.6 Arial, sans-serif;
+  font: 14px/1.6 Arial, sans-serif;
+}
+@media 
+(-webkit-min-device-pixel-ratio: 2), 
+(min-resolution: 192dpi){ 
+  body {
+    font: 28px/1.6 Arial, sans-serif;    
+  }
 }
 
 /* Links */
