@@ -31,7 +31,6 @@ body.section-products div#content {
 }
 
 body.section-products div#content div.page-content {
-	max-width:1000px;
 	width: auto;
 	padding:0;
 	min-width: 0;
@@ -39,7 +38,6 @@ body.section-products div#content div.page-content {
 
 body.section-products .wrap,
 body.section-products div#content div.page-content .wrap {
-	max-width: 1004px !important;
 	width: auto !important;
 	padding:0;
 }
@@ -113,7 +111,6 @@ body.section-products div#content div.page-content {
 .view,
 .node {
 	overflow: hidden;
-	max-width: 1000px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -892,10 +889,8 @@ div#cuts a {
 	background-size: 20px;
 	text-indent: -9999px;
 }
-@media screen and ( max-width: 900px ) {
-	#zoomer {
-		display: none;
-	}
+#zoomer {
+	display: none;
 }
 
 div#front a {
