@@ -190,6 +190,7 @@ body.section-products div#content div.page-content {
 .view .view-content,
 .node .photo-box {
 	position: absolute;
+	z-index: 10;
 	-webkit-transition: all .3s ease;
 	transition: all .3s ease;
 }
