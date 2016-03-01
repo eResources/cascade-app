@@ -20,13 +20,9 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "1",
             "Path": "alder\/superior.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "cf1",
             "Width": "4+",
             "Matrix": {
-                "13-16": {
-                    "8-1": true,
-                    "10-1": true
-                },
                 "4-4": {
                     "6-1": true,
                     "7-1": true,
@@ -115,7 +111,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "22",
             "Path": "alder\/superior-color.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "cf1",
             "Limiting Characteristics": "color",
             "Width": "4+",
             "Matrix": {
@@ -217,10 +213,6 @@ jQuery.extend(Drupal.settings, {
             "Cutting Face": "cf2",
             "Width": "4+",
             "Matrix": {
-                "13-16": {
-                    "8-1": true,
-                    "10-1": true
-                },
                 "4-4": {
                     "8-1": true,
                     "8-3": true,
@@ -326,7 +318,9 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "11",
             "Path": "alder\/jacket-board-1.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": {
+                "1":"cf1",
+                "2":"cf2"},
             "Width": "4-",
             "Matrix": {
                 "4-4": {
@@ -352,10 +346,6 @@ jQuery.extend(Drupal.settings, {
             "Cutting Face": "cf1",
             "Width": "4+",
             "Matrix": {
-                "13-16": {
-                    "8-1": true,
-                    "10-1": true
-                },
                 "4-4": {
                     "8-1": true,
                     "8-3": true,
@@ -407,7 +397,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "rustic",
             "Nid": "15",
             "Path": "alder\/premium.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "sc",
             "Limiting Characteristics": "knots",
             "Width": {
                 "1": "4-",
@@ -437,7 +427,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "rustic",
             "Nid": "13",
             "Path": "alder\/k-strip.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "sc",
             "Limiting Characteristics": "knots",
             "Width": {
                 "1": "4-",
@@ -494,7 +484,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "rustic",
             "Nid": "14",
             "Path": "alder\/rustic.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "sc",
             "Limiting Characteristics": "knots",
             "Width": "4+",
             "Matrix": {
@@ -597,10 +587,6 @@ jQuery.extend(Drupal.settings, {
             },
             "Width": "4+",
             "Matrix": {
-                "13-16": {
-                    "8-1": true,
-                    "10-1": true
-                },
                 "4-4": {
                     "8-1": true,
                     "8-3": true,
@@ -630,7 +616,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "rustic",
             "Nid": "16",
             "Path": "alder\/standard-frame.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "sc",
             "Limiting Characteristics": {
                 "1": "knots",
                 "2": "skip",
@@ -675,7 +661,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "utility",
             "Nid": "9",
             "Path": "alder\/3-shop.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "sc",
             "Limiting Characteristics": {
                 "1": "knots",
                 "2": "skip",
@@ -686,10 +672,10 @@ jQuery.extend(Drupal.settings, {
                 "2": "4+"
             },
             "Matrix": {
-                "13-16": {
-                    "8-1": true,
-                    "10-1": true
-                },
+                // "13-16": {
+                //     "8-1": true,
+                //     "10-1": true
+                // },
                 "4-4": {
                     "6-1": true,
                     "8-1": true,
@@ -729,7 +715,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "utility",
             "Nid": "26",
             "Path": "alder\/utility.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "",
             "Limiting Characteristics": {
                 "1": "knots",
                 "2": "skip",
@@ -771,7 +757,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "31",
             "Path": "ash\/select-and-better.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "cf1",
             "Width": {
                 "1": "4-",
                 "2": "4+"
@@ -794,7 +780,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "30",
             "Path": "ash\/1-shop.html",
-            "Cutting Face": "cf1",
+            "Cutting Face": "",
             "Width": {
                 "1": "4-",
                 "2": "4+"
@@ -820,7 +806,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "33",
             "Path": "ash\/2-shop.html",
-            "Cutting Face": "cf1",
+            "Cutting Face": "",
             "Limiting Characteristics": "knots",
             "Width": {
                 "1": "4-",
@@ -847,7 +833,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "rustic",
             "Nid": "17",
             "Path": "ash\/frame.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "sc",
             "Limiting Characteristics": {
                 "1": "knots",
                 "2": "skip",
@@ -875,7 +861,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "utility",
             "Nid": "35",
             "Path": "ash\/3-shop.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "sc",
             "Limiting Characteristics": {
                 "1": "knots",
                 "2": "skip",
@@ -900,7 +886,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "27",
             "Path": "maple\/select-and-better.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "cf1",
             "Width": {
                 "1": "4-",
                 "2": "4+"
@@ -941,7 +927,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "38",
             "Path": "maple\/select-and-better-color.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "cf1",
             "Limiting Characteristics": "color",
             "Width": {
                 "1": "4-",
@@ -979,7 +965,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "29",
             "Path": "maple\/1-shop.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "cf1",
             "Limiting Characteristics": "knots",
             "Width": {
                 "1": "4-",
@@ -1022,7 +1008,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "39",
             "Path": "maple\/1-shop-color.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "cf1",
             "Limiting Characteristics": {
                 "1": "knots",
                 "2": "color"
@@ -1087,7 +1073,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "32",
             "Path": "maple\/2-shop.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "cf1",
             "Limiting Characteristics": {
                 "1": "knots",
                 "2": "skip"
@@ -1133,7 +1119,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "rustic",
             "Nid": "18",
             "Path": "maple\/standard-frame.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "sc",
             "Limiting Characteristics": {
                 "1": "knots",
                 "2": "skip",
@@ -1168,7 +1154,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "utility",
             "Nid": "34",
             "Path": "maple\/3-shop.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "sc",
             "Limiting Characteristics": {
                 "1": "knots",
                 "2": "skip",
@@ -1207,7 +1193,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "utility",
             "Nid": "43",
             "Path": "maple\/utility.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "",
             "Limiting Characteristics": {
                 "1": "knots",
                 "2": "skip",
@@ -1248,7 +1234,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear_cutting",
             "Nid": "43",
             "Path": "cottonwood\/1-shop.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "",
             "Limiting Characteristics": "color",
             "Width": {
                 "1": "4-"
@@ -1268,10 +1254,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "43",
             "Path": "cottonwood\/select-and-better.html",
-            "Cutting Face": {
-                "1": "cf1",
-                "2": "cf2"
-            },
+            "Cutting Face": "",
             "Limiting Characteristics": "color",
             "Width": {
                 "1": "4-"
@@ -1294,7 +1277,7 @@ jQuery.extend(Drupal.settings, {
             "Category": "clear",
             "Nid": "43",
             "Path": "cottonwood\/chop.html",
-            "Cutting Face": "cf2",
+            "Cutting Face": "",
             "Limiting Characteristics": "color",
             "Width": {
                 "1": "4-"
@@ -1306,10 +1289,8 @@ jQuery.extend(Drupal.settings, {
                 }
             },
             "Rons_Category": {
-                "1": "clear",
-                "2": "clear_cutting",
-                "3": "structural",
-                "4": "crating"
+                "1": "crating",
+                "2": "structural"
             }
         }
     }]
